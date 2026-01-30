@@ -1,9 +1,11 @@
-const tailwindConfig = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+import type { Config } from 'tailwindcss'
+
+const tailwindConfig: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-pretendard)', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         blue: {
