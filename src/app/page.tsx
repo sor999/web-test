@@ -1,4 +1,8 @@
-export default function Home() {
+import { requestGetHome } from '../apis/request/requestGetHome'
+
+export default async function Home() {
+  const data = await requestGetHome()
+
   return (
     <div className="bg-gray-white min-h-screen space-y-10 p-10">
       <section className="space-y-4">
@@ -31,6 +35,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div>{JSON.stringify(data)}</div>
     </div>
   )
 }
