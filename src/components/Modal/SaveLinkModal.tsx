@@ -46,12 +46,7 @@ export function SaveLinkModal({
   const isCreateMode = selectedFolder?.id === 'create-folder'
 
   return (
-    <Modal
-      isOpen={isModalOpen}
-      width="w-400"
-      height="h-800"
-      className="flex flex-col gap-20"
-    >
+    <Modal isOpen={isModalOpen} width="w-400" className="flex flex-col gap-20">
       {/* 링크 저장 이유 */}
       <div className="flex flex-col gap-12">
         <label className="text-body-1 text-gray-default">이유</label>
@@ -139,7 +134,7 @@ export function SaveLinkModal({
         />
       </div>
 
-      <div className="mt-auto flex justify-end gap-20">
+      <div className="mt-10 flex justify-end gap-20">
         <Button
           width="w-85"
           height="h-42"
