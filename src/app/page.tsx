@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { requestGetHome } from '../apis/request/requestGetHome'
 
 export default async function Home() {
